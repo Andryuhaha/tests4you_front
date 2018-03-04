@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8" />
+  <script src="http://code.jquery.com/jquery-1.8.3.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+  <script src="js/getDataForChart.js"></script>
+
+  <title>HTML5</title>
+ </head>
+ <body>
+<a class="aa" href="#"></a>
+  <form method="POST" action='http://kurakste.fvds.ru/cap_for_test/cap.php' id='fAnswer'>
+      <input type="hidden" name="_token" value="Z7tfXeBwuZJMtAOYZy2cPAJo4ilHGasBGVNp4JF9">
+      <div class="form-group">
+          <label for="email">введите ваш e-mail</label>
+          <input type="email" class="form-control" name="email" id="email" placeholder="">
+      </div>
+      <div class="form-group">
+          <label for="q1a">Вопрос  1</label>
+          <input type="text" class="form-control" name='q1a' value='1' id="q1a" placeholder="">
+          <input type="text" class="form-control" value='4' name="q1b" id="q1b" placeholder="">
+      </div>
+      <div class="form-group">
+          <label for="q2a">Вопрос  2</label>
+          <input type="text" class="form-control" id="q2a" name="q2a"  placeholder=""  value='1'>
+          <input type="text" class="form-control" id="q2b" name="q2b" placeholder=""  value='4'>
+      </div>
+      <div class="form-group">
+          <label for="q3a">Вопрос  3</label>
+          <input type="text" class="form-control" id="q3a" name="q3a" placeholder=""  value='1'>
+          <input type="text" class="form-control" id="q3b" name="q3b" placeholder=""  value='4'>
+      </div>
+      <div class="form-group">
+          <label for="q4a">Вопрос  4</label>
+          <input type="text" class="form-control" id="q4a" name="q4a" placeholder=""  value='1'>
+          <input type="text" class="form-control" id="q4b" name="q4b" placeholder=""  value='4'>
+      </div>
+      <div class="form-group">
+          <label for="q5a">Вопрос  5</label>
+          <input type="text" class="form-control" id="q5a" name="q5a" placeholder=""  value='1'>
+          <input type="text" class="form-control" id="q5b" name="q5b" placeholder=""  value='4'>
+      </div>
+      <div class="form-group">
+          <label for="q6a">Вопрос  6</label>
+          <input type="text" class="form-control" id="q6a" name="q6a" placeholder=""  value='1'>
+          <input type="text" class="form-control" id="q6b" name="q6b" placeholder=""  value='4'>
+      </div>
+      <div class="form-group">
+          <label for="q7a">Вопрос  7</label>
+          <input type="text" class="form-control" id="q7a" name="q7a" placeholder="" value='1'>
+          <input type="text" class="form-control" id="q7b" name="q7b" placeholder=""  value='4'>
+      </div>
+      <div class="form-group">
+          <label for="q8a">Вопрос  8</label>
+          <input type="text" class="form-control" id="q8a" name="q8a" placeholder="" value='1'>
+          <input type="text" class="form-control" id="q8b" name="q8b" placeholder=""  value='4'>
+      </div>
+      <div class="form-group">
+          <label for="q9a">Вопрос  9</label>
+          <input type="text" class="form-control" id="q9a" name="q9a" placeholder="" value='1'>
+          <input type="text" class="form-control" id="q9b" name="q9b" placeholder=""  value='4'>
+      </div>
+      <div class="form-group">
+          <label for="q10a">Вопрос 10</label>
+          <input type="text" class="form-control" id="q10a" name="q10a" placeholder="" value='1'>
+          <input type="text" class="form-control" id="q10b" name="q10b" placeholder=""  value='4'>
+      </div>
+      <div class="form-group">
+          <label for="q11a">Вопрос 11</label>
+          <input type="text" class="form-control" id="q11a" name="q11a" placeholder="" value='1'>
+          <input type="text" class="form-control" id="q11b" name="q11b" placeholder=""  value='4'>
+      </div>
+      <div class="form-group">
+          <label for="q12a">Вопрос 12</label>
+          <input type="text" class="form-control" id="q12a" name="q12a" placeholder="" value='1'>
+          <input type="text" class="form-control" id="q12b" name="q12b" placeholder=""  value='4'>
+      </div>
+      <div class="form-group">
+          <label for="q13a">Вопрос 13</label>
+          <input type="text" class="form-control" id="q13a" name="q13a" placeholder="" value='1'>
+          <input type="text" class="form-control" id="q13b" name="q13b" placeholder=""  value='4'>
+      </div>
+      <div class="form-group">
+          <label for="q14a">Вопрос 14</label>
+          <input type="text" class="form-control" id="q14a" name="q14a" placeholder="" value='1'>
+          <input type="text" class="form-control" id="q14b" name="q14b" placeholder=""  value='4'>
+      </div>
+      <div class="form-group">
+          <label for="q15a">Вопрос 15</label>
+          <input type="text" class="form-control" id="q15a" name="q15a" placeholder="" value='1'>
+          <input type="text" class="form-control" id="q15b" name="q15b" placeholder=""  value='4'>
+      </div>
+      <div class="form-group">
+          <label for="q16a">Вопрос 16</label>
+          <input type="text" class="form-control" id="q16a" name="q16a" placeholder="" value='1'>
+          <input type="text" class="form-control" id="q16b" name="q16b" placeholder=""  value='4'>
+      </div>
+      <div class="form-group">
+          <label for="q17a">Вопрос 17</label>
+          <input type="text" class="form-control" id="q17a" name="q17a" placeholder="" value='1'>
+          <input type="text" class="form-control" id="q17b" name="q17b" placeholder=""  value='4'>
+      </div>
+      <div class="form-group">
+          <label for="q18a">Вопрос 18</label>
+          <input type="text" class="form-control" id="q18a" name="q18a" placeholder="" value='1'>
+          <input type="text" class="form-control" id="q18b" name="q18b" placeholder=""  value='4'>
+      </div>
+      <div class="form-group">
+          <label for="q19a">Вопрос 19</label>
+          <input type="text" class="form-control" id="q19a" name="q19a" placeholder="" value='1'>
+          <input type="text" class="form-control" id="q19b" name="q19b" placeholder=""  value='4'>
+      </div>
+      <div class="form-group">
+          <label for="q20a">Вопрос 20</label>
+          <input type="text" class="form-control" id="q20a" name="q20a" placeholder="" value='1'>
+          <input type="text" class="form-control" id="q20b" name="q20b" placeholder=""  value='4'>
+      </div>
+      <div class="form-group">
+          <label for="q21a">Вопрос 21</label>
+          <input type="text" class="form-control" id="q21a" name="q21a" placeholder="" value='1'>
+          <input type="text" class="form-control" id="q21b" name="q21b" placeholder=""  value='4'>
+      </div>
+      <div class="form-group">
+          <label for="q22a">Вопрос 22</label>
+          <input type="text" class="form-control" id="q22a" name="q22a" placeholder="" value='1'>
+          <input type="text" class="form-control" id="q22b" name="q22b" placeholder=""  value='4'>
+      </div>
+      <div class="form-group">
+          <label for="q23a">Вопрос 23</label>
+          <input type="text" class="form-control" id="q23a" name="q23a" placeholder="" value='1'>
+          <input type="text" class="form-control" id="q23b" name="q23b" placeholder=""  value='4'>
+      </div>
+      <div class="form-group">
+          <label for="q24a">Вопрос 24</label>
+          <input type="text" class="form-control" id="q24a" name="q24a" placeholder="" value='1'>
+          <input type="text" class="form-control" id="q24b" name="q24b" placeholder=""  value='4'>
+      </div>
+      <div class="form-group">
+          <label for="q25a">Вопрос 25</label>
+          <input type="text" class="form-control" id="q25a" name="q25a" placeholder="" value='1'>
+          <input type="text" class="form-control" id="q25b" name="q25b" placeholder=""  value='4'>
+      </div>
+      <div class="form-group">
+          <label for="q26a">Вопрос 26</label>
+          <input type="text" class="form-control" id="q26a" name="q26a" placeholder="" value='1'>
+          <input type="text" class="form-control" id="q26b" name="q26b" placeholder=""  value='4'>
+      </div>
+      <div class="form-group">
+          <label for="q27a">Вопрос 27</label>
+          <input type="text" class="form-control" id="q27a" name="q27a" placeholder="" value='1'>
+          <input type="text" class="form-control" id="q27b" name="q27b" placeholder=""  value='4'>
+      </div>
+
+      <div class="form-group">
+          <label for="q28a">Вопрос 28</label>
+          <input type="text" class="form-control" id="q28a" name="q28a" placeholder="" value='1'>
+          <input type="text" class="form-control" id="q28b" name="q28b" placeholder=""  value='4'>
+      </div>
+      <button class="button" type="submit">Send</button>
+  </form>
+
+  <button id = "bGetResult">Получить результат</button>
+
+  <div class="chart" style='width: 800px'>
+      <canvas id="myChart"></canvas>
+  </div>
+ </body>
+</html>
+
+
+
+
+
+
+    
